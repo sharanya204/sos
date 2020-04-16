@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
+// import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
   <StaticQuery
@@ -31,18 +31,16 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
-                <br />
-                every way
-                <br />
-                that matters
+                SOS
               </h1>
+              <h2>
+                Save Our Species
+              </h2>
               <br />
+              {/* <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
-              </p>
+              From the first cave paintings of human-animal partnerships to modern day animal memes, human and animal lives have always been intertwined. While there are countless examples of mutualism between humans and animals, the balance is starting to tip. The International Union for Conservation of Nature (IUCN) conducts research and publishes the IUCN Red List of Threatened Species, which assesses the conservation status of species worldwide. 
+              </p> */}
             </Text>
           </Grid>
         </Container>
@@ -53,7 +51,7 @@ const Header = () => (
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
-  padding-top: 96px;
+  padding-top: 128px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;
@@ -78,11 +76,11 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 64px;
+  grid-gap: 160px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
-    grid-gap: 80px;
+    grid-gap: 60px;
 
     > ${Art} {
       order: 2;
@@ -98,13 +96,13 @@ const Text = styled.div`
   }
 `;
 
-const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
-  text-decoration: none;
+// const StyledExternalLink = styled(ExternalLink)`
+//   color: inherit;
+//   text-decoration: none;
 
-  &:hover {
-    color: ${props => props.theme.color.black.regular};
-  }
-`;
+//   &:hover {
+//     color: ${props => props.theme.color.black.regular};
+//   }
+// `;
 
 export default Header;
