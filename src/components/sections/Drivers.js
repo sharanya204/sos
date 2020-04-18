@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { Link } from 'gatsby';
 
 import { Section, Container } from '@components/global';
 
@@ -47,15 +48,17 @@ const Drivers = () => (
       <Section id="drivers">
         <Container>
           <Grid>
-            <div>
-              <h2>Medicine</h2>
-              <p>
-              Many advancements in human health are thanks to animals, from laboratory research to extraction of animal parts for their medicinal value.
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.art_ivory.childImageSharp.fluid} />
-            </Art>
+            {/* <Link to="/pages/404.js"> */}
+                <div>
+                  <h2>Medicine</h2>
+                  <p>
+                  Many advancements in human health are thanks to animals, from laboratory research to extraction of animal parts for their medicinal value.
+                  </p>
+                </div>
+                <Art>
+                  <Img fluid={data.art_ivory.childImageSharp.fluid} />
+                </Art>
+            {/* </Link> */}
           </Grid>
           <Grid inverse>
             <Art>

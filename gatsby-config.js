@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  pathPrefix: "/sos",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
