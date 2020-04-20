@@ -73,7 +73,7 @@ const Drivers = () => (
           </Grid>
           <Grid>
             <div>
-              <h2>Culture</h2>
+              <Link to ="elephant"><h2>Culture</h2></Link>
               <p>
               Animals are often exploited in the name of culture, including commercialization of animal parts and domesticated house pets.
               </p>
