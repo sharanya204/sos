@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
     font-weight: normal;
   }
 
-  h1, h2 {
+  h1, h2, h3 {
     font-family: ${props => props.theme.font.primary};
   }
 

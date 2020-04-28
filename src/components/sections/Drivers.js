@@ -21,9 +21,9 @@ const Drivers = () => (
           }
         }
 
-        art_learn: file(
+        art_medicine: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "ivory_desc" }
+          name: { eq: "medicine_desc" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -32,9 +32,9 @@ const Drivers = () => (
           }
         }
 
-        art_ivory: file(
+        art_policy: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "ivory_desc" }
+          name: { eq: "medicine_desc2" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -50,22 +50,22 @@ const Drivers = () => (
           <Grid>
             {/* <Link to="/pages/404.js"> */}
                 <div>
-                  <h2>Medicine</h2>
+                <Link to ="saiga"><h2>Medicine</h2></Link>
                   <p>
                   Many advancements in human health are thanks to animals, from laboratory research to extraction of animal parts for their medicinal value.
                   </p>
                 </div>
                 <Art>
-                  <Img fluid={data.art_ivory.childImageSharp.fluid} />
+                  <Img fluid={data.art_medicine.childImageSharp.fluid} />
                 </Art>
             {/* </Link> */}
           </Grid>
           <Grid inverse>
             <Art>
-              <Img fluid={data.art_ivory.childImageSharp.fluid} />
+              <Img fluid={data.art_policy.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Policy</h2>
+            <Link to ="yellowfrog"><h2>Policy</h2></Link>
               <p>
               Policy can help or hurt species populations, whether it’s protecting an animal from extinction or enabling the decline of an animal by destroying its habitat.
               </p>

@@ -1,11 +1,80 @@
 .quickfacts {
-    background:#E0C389;
+    /* background:#E0C389; */
+    padding-top: 60px;
 }
 
 #elephantsection {
     background: #E0C389;
 }
 
-h1 {
-    margin: 100px 100px;
+.ivoryintro {
+    background: #F2E5D2;
+}
+
+#whativory {
+    font-weight: 500;
+}
+
+#yellowfrogsection {
+    background: #AFB96E;
+}
+
+#saigasection {
+    background: #C5894D;
+}
+
+.sectionheader {
+    padding-left:20%;
+}
+
+.responsive-image {
+    position: relative;
+    max-width: 100%;
+  }
+  
+.img-fluid {
+    width:100%;
+}
+
+.animaltitlestyle {
+    color: #ffffff;
+    font-size: 120px;
+    opacity: 75%;
+}
+
+/* .ivoryintroimg {
+    position: relative;
+      top: 0;
+      left: 0;
+} */
+
+#whativory {
+    padding-bottom: 5%;
+}
+
+
+.sourceicons {
+    margin:20px;
+    width:20%;
+    scale: 100%;
+    opacity: 50%;
+    transition: 500ms;
+}
+.sources {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.sourcetext {
+    display: inline-flex;
+    margin-bottom:5%;
+}
+
+#sourceiconswalrus:hover 
+    span {display:none}
+#sourceiconswalrus:hover:before {content: "Alt"}
+
+.sourceicons:hover {
+    opacity: 100%;
+    scale:120%;
 }
