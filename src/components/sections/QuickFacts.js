@@ -1,61 +1,55 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-
-import PropTypes from 'prop-types';
-import { ThemeProvider } from 'styled-components';
-
-import SEO from '@common/SEO';
-
-import theme from '@styles/theme';
-import GlobalStyles from '@styles/GlobalStyles';
-
-import Img from 'gatsby-image';
+import elephantqf from '@images/quickfacts/quickfactselephant.png';
+import frogqf from '@images/quickfacts/frogquickfacts.png'
+import saigaqf from '@images/quickfacts/saigaquickfacts.png'
+import Image from 'react-bootstrap/Image'
 import { Section, Container } from '@components/global';
 
 import '@styles/stylesheet.css';
 
-const QuickFactsElephant = () => ( 
+import { useStaticQuery } from "gatsby"
+
+// const data = () => useStaticQuery(graphql`
+//     query {
+//       file(relativePath: { eq: "3.png" }) {
+//         childImageSharp {
+
+//           fluid {
+//             ...GatsbyImageSharpFluid
+//           }
+//         }
+//       }
+//     }
+//   `)
+
+export const QuickFactsElephant = () => ( 
   <Section className="quickfacts">
     <Container>
-      
-        <div>
-          <img src="3.png"></img> 
+        <div className = "responsive-image">
+        <Image src={elephantqf} className="img-fluid" />
         </div>
-
     </Container>
   </Section>
 );
 
 
-const QuickFactsYellowFrog = () => (
+export const QuickFactsYellowFrog = () => (
   <Section className="quickfacts">
-    <Container id="">
-      
-        <div>
-          
-          <p>
-          A driver is defined as any natural or human-induced factor that directly or indirectly causes a change in an ecosystem. SOS paints a picture of endangerment and extinction of biodiversity via the lens of human drivers, exploring the changes that human exploitation of our planet has brought about.
-          </p>
+    <Container>
+        <div className = "responsive-image">
+        <Image src={frogqf} className="img-fluid" />
         </div>
-
     </Container>
   </Section>
 );
 
 
-const QuickFactsSaiga = () => (
+export const QuickFactsSaiga = () => (
   <Section className="quickfacts">
-    <Container id="">
-      
-        <div>
-          
-          <p>
-          A driver is defined as any natural or human-induced factor that directly or indirectly causes a change in an ecosystem. SOS paints a picture of endangerment and extinction of biodiversity via the lens of human drivers, exploring the changes that human exploitation of our planet has brought about.
-          </p>
+    <Container>
+        <div className = "responsive-image">
+        <Image src={saigaqf} className="img-fluid" />
         </div>
-
     </Container>
   </Section>
 );
-
-export default QuickFactsElephant;
