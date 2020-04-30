@@ -5,7 +5,7 @@ import saigaqf from '@images/quickfacts/saigaquickfacts.png'
 import Image from 'react-bootstrap/Image'
 import { Section, Container } from '@components/global';
 
-import '@styles/stylesheet.css';
+import '@styles/stylesheet_elephant.css';
 
 import { useStaticQuery } from "gatsby"
 

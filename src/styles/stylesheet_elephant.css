@@ -37,9 +37,8 @@
 }
 
 .animaltitlestyle {
-    color: #ffffff;
+    color: #F2E5D2;
     font-size: 120px;
-    opacity: 75%;
 }
 
 /* .ivoryintroimg {
@@ -54,27 +53,38 @@
 
 
 .sourceicons {
+    display: inline-block;
     margin:20px;
-    width:20%;
+    width:15%;
     scale: 100%;
-    opacity: 50%;
     transition: 500ms;
 }
-.sources {
-    display: inline-flex;
-    vertical-align: middle;
-}
-
-.sourcetext {
-    display: inline-flex;
-    margin-bottom:5%;
-}
-
-#sourceiconswalrus:hover 
-    span {display:none}
-#sourceiconswalrus:hover:before {content: "Alt"}
 
 .sourceicons:hover {
-    opacity: 100%;
     scale:120%;
 }
+
+.sources {
+    height:100%;
+    text-align: center;
+}
+
+.spacer {
+    padding:5%;
+}
+
+#walrustext { display: none; }
+#walrus:hover ~ #walrustext { display: block; }
+
+#orcatext { display: none;}
+#orca:hover ~ #orcatext { display:block; }
+
+#narwhaltext { display: none;}
+#narwhal:hover ~ #narwhaltext { display:block; }
+
+#warthogtext { display: none;}
+#warthog:hover ~ #warthogtext { display:block; }
+
+#hippotext { display: none; }
+#hippo:hover ~ #hippotext { display:block; }
+

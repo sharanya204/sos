@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types"
-import '@styles/stylesheet.css';
+import '@styles/stylesheet_elephant.css';
 
 import { Section, Container } from '@components/global';
 
