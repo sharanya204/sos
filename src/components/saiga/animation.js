@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Section, Container } from '@components/global';
-import '@styles/stylesheet.css';
+import '@styles/stylesheet_elephant.css';
 
 import { ReactComponent as SaigaAnimationIcon} from '@images/Saiga/antelopelayers.svg';
 
