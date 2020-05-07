@@ -23,4 +23,4 @@ export const SaigaAnimation = () => (
 
 );
 
-export default SaigaAnimation;
+export default SaigaAnimation
