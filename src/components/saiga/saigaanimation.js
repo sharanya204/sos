@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Section, Container } from '@components/global';
-import '@styles/stylesheet.css';
+import '@styles/stylesheet_saiga.css';
 
 import { ReactComponent as SaigaAnimationIcon} from '@images/Saiga/antelopelayers.svg';
 
@@ -23,4 +23,4 @@ export const SaigaAnimation = () => (
 
 );
 
-export default SaigaAnimation;
+export default SaigaAnimation
