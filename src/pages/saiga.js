@@ -5,6 +5,7 @@ import Title from '@sections/Title';
 import { Section, Container } from '@components/global';
 import { QuickFactsSaiga } from '@sections/QuickFacts.js'
 import { SaigaAnimation } from '@components/saiga/saigaanimation' 
+import { SaigaTimeline } from '@components/saiga/SaigaTimeline'
 
 const Saiga = () => (
   <Layout>
@@ -13,6 +14,7 @@ const Saiga = () => (
       <Title animalname = {"Saiga"}></Title>
       <QuickFactsSaiga />
       </Section>
+      <SaigaTimeline />
       <SaigaAnimation />
   </Layout>
 );
