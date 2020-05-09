@@ -17,7 +17,6 @@ export const SaigaTimeline = () => (
 			</div>
 		</Container>
 	</Section>
-
 );
 
 export default SaigaTimeline
