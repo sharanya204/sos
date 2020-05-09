@@ -79,7 +79,7 @@ const Drivers = () => (
               </p>
             </div>
             <Art>
-              {/* <Img fluid={data.art_ivory.childImageSharp.fluid} /> */}
+              <Img fluid={data.art_ivory.childImageSharp.fluid} />
             </Art>
           </Grid>
         </Container>
