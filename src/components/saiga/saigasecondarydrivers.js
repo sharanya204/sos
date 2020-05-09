@@ -26,7 +26,7 @@ export const SaigaSecondaryDrivers = () => (
       <div id="secondarydriversheading">
             <h1>Secondary Drivers</h1>
           <br></br>
-                <p><span> Other than poaching, the Saiga are also threatened by several other human activities.</span></p>
+                <p><span> Other than poaching, the Saiga are also threatened by several other factors.</span></p>
             </div>
 
             <div className="sources">
