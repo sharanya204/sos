@@ -1,6 +1,6 @@
 import React from 'react';
 import elephantqf from '@images/quickfacts/quickfactselephant.png';
-import frogqf from '@images/quickfacts/frogquickfacts.png'
+import frogqf from '@images/quickfacts/frogquickfacts.png.svg'
 import saigaqf from '@images/quickfacts/saigaquickfacts.png'
 import Image from 'react-bootstrap/Image'
 import { Section, Container } from '@components/global';

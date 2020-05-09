@@ -6,6 +6,10 @@ import Layout from '@common/Layout';
 import Title from '@sections/Title';
 import { Section, Container } from '@components/global';
 import { IvorySources } from '@components/elephant/IvorySources'
+import { IvoryDestinations } from '@components/elephant/IvoryDestinations'
+import IvoryPricing from '../components/elephant/ivorypricing';
+import NarrativeMain from '../components/elephant/narrative';
+
 
 const Elephant = () => (
   <Layout>
@@ -17,6 +21,9 @@ const Elephant = () => (
     </Section>
     <Ivoryintro />
     <IvorySources />
+    <NarrativeMain />
+    <IvoryDestinations />
+    <IvoryPricing />
   </Layout>
 );
 

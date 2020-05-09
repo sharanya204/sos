@@ -24,18 +24,18 @@ elems.forEach(elem => {
 export const IvorySources = () => ( 
     <Section>
       <Container>
-      <div id="whativory">
-            <h3>Sources of ivory</h3>
+      <div className="whativory">
+            <h3>Animal sources of ivory</h3>
           </div>
       <div className="sourcetext">
                 <p><span>Sources of ivory are primarily the two modified incisors of living and extinct members of the Proboscidea family: Asian and African elephants and extinct mammoth from Alaska and Siberia. 
                     
-                However, since their chemical structure is identical to elephant tusks, other mammals with large enough teeth to be carvable are: </span></p>
+                However, since their chemical structure is identical to elephant tusks, other mammals with large enough teeth to be carvable are used instead (hover on each animal for more information). </span></p>
             </div>
 
             <div className="spacer"> </div>
-
             <div className="sources">
+            <div id="sourcesparent">
                 <IconWalrus className="sourceicons" id="walrus">
                 </IconWalrus>
 
@@ -63,6 +63,8 @@ export const IvorySources = () => (
 
                 <p id="hippotext">Hippopotamus ivory is harder than elephant ivory and is more difficult to carve. It was, however, commonly used in the eighteenth century to make dentures and also to replace individual teeth.</p>
             </div>
+            </div>
+            <div className="spacer"></div>
             
       </Container>
     </Section>

@@ -11,12 +11,21 @@
     background: #F2E5D2;
 }
 
-#whativory {
+.narrative {
+    background:#F2E5D2
+}
+
+.pricesection {
+    background:#F2E5D2
+}
+
+.whativory {
     font-weight: 500;
+    padding-bottom: 5%;
 }
 
 #yellowfrogsection {
-    background: #AFB96E;
+    background: #F6F8FA;
 }
 
 #saigasection {
@@ -27,11 +36,10 @@
     padding-left:20%;
 }
 
-.responsive-image {
+.whativorytusks {
     position: relative;
-    max-width: 100%;
-  }
-  
+    width: 50%;  }
+
 .img-fluid {
     width:100%;
 }
@@ -41,36 +49,73 @@
     font-size: 120px;
 }
 
+.texthl {
+    color:#8B0E3A
+}
+
 /* .ivoryintroimg {
     position: relative;
       top: 0;
       left: 0;
 } */
 
-#whativory {
-    padding-bottom: 5%;
+#whativorybody {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+    
+    #introskull {
+    flex-basis: 20%;
+    margin-right:5%;
+    fill: #8B0E3A;
 }
 
+#introsub {
+    flex-basis: 80%;
+    margin-right:2.5%;
+    margin-left:2.5%
+}
 
 .sourceicons {
     display: inline-block;
-    margin:20px;
+    margin:15px;
     width:15%;
-    scale: 100%;
+    scale: 80%;
+    filter: opacity(25%);
+    filter: grayscale(100%);
     transition: 500ms;
 }
 
 .sourceicons:hover {
-    scale:120%;
+    filter: opacity(100%);
+    filter: grayscale(0%);
+    scale:100%;
+}
+
+#sourcesparent {
+    height:100%
 }
 
 .sources {
-    height:100%;
+    height:25vh;
     text-align: center;
 }
 
+.destinations {
+    height:70vh;
+    text-align: center;
+    display: inline-flex;
+    flex-basis: content;
+    align-items: center;
+}
+
+.destinationmaster {
+    width:80%;
+}
+
 .spacer {
-    padding:5%;
+    padding:2%;
 }
 
 #walrustext { display: none; }
@@ -88,3 +133,36 @@
 #hippotext { display: none; }
 #hippo:hover ~ #hippotext { display:block; }
 
+/* #DestinationsMaster_svg__Camb > path:nth-child(3){
+    fill: #000000;;
+} */
+
+.tooltiptext {
+    display: flex;
+    flex-direction: column;
+     flex-basis:40%;
+    visibility: hidden;
+    background-color: #F2E5D2;
+    color: #000000;
+    text-align: left;
+    padding: 50px;
+    border-radius: 6px;
+    position: relative;
+    right:0%;
+    height:auto;
+    z-index: 1;
+  }
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #F2E5D2 transparent transparent;
+  }
+  
+  .destinations:hover .tooltiptext {
+    visibility: visible;
+  }
