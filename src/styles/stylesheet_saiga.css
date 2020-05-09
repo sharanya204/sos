@@ -11,6 +11,7 @@
     font-family: Avenir;
 }
 
+/* Quick facts */
 #saigasection {
     background: #C5894D;
 }
@@ -28,12 +29,21 @@
     width:100%;
 }
 
+/* Timeline */
 #Timeline {
     background: #C5894D;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
+/* Animation */
 #WhyImportant {
     background: #F2E5D2;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
 }
 
 .AnimationText {
@@ -43,4 +53,53 @@
 .figure {
     background: #F2E5D2;
 }
+
+
+/* Secondary drivers */
+#secondarydriversheading {
+    background:#F2E5D2;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.sources {
+    height:100%;
+    text-align: center;
+    background:#F2E5D2;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.spacer {
+    padding:5%;
+}
+
+.sourceicons {
+    display: inline-block;
+    margin:20px;
+    width:15%;
+    scale: 100%;
+    transition: 500ms;
+}
+
+.sourceicons:hover {
+    scale:100%;
+}
+
+#furtext { display: none; }
+#fur:hover ~ #furtext { display: block; }
+
+#migrationtext { display: none;}
+#migration:hover ~ #migrationtext { display:block; }
+
+#gendertext { display: none;}
+#gender:hover ~ #gendertext { display:block; }
+
+#susceptibletext { display: none;}
+#susceptible:hover ~ #susceptibletext { display:block; }
+
+#fighttext { display: none; }
+#fight:hover ~ #fighttext { display:block; }
 
