@@ -1,5 +1,5 @@
 // SVG parameters
-const svg1 = d3.select('svg')
+    const svg1 = d3.select('svg')
     .attr('width', 1000)
     .attr('height', 1000);
 
@@ -88,5 +88,4 @@ button.append('text')
     .text('Save the Saiga!');
 
 button.on('click', function () {
-    d3.selectAll('#Saiga1, #Saiga2, #Saiga3, #Wolf1, #Wolf2, #Fox1, #Fox2, #Plant1, #Plant2, #Plant3, #Plant4').style('fill-opacity', 1);
-});
+    d3.selectAll('#Saiga1, #Saiga2, #Saiga3, #Wolf1, #Wolf2, #Fox1, #Fox2, #Plant1, #Plant2, #Plant3, #Plant4').style('fill-opacity', 1);})

@@ -15,6 +15,32 @@
     background: #C5894D;
 }
 
-.saigaanimation {
+.sectionheader {
+    padding-left:20%;
+}
+
+.responsive-image {
+    position: relative;
+    max-width: 100%;
+  }
+  
+.img-fluid {
+    width:100%;
+}
+
+#Timeline {
+    background: #C5894D;
+}
+
+#WhyImportant {
     background: #F2E5D2;
 }
+
+.AnimationText {
+    background: #F2E5D2;
+}
+
+.figure {
+    background: #F2E5D2;
+}
+
