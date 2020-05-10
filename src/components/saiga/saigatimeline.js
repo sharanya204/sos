@@ -10,11 +10,12 @@ export const SaigaTimeline = () => (
 		<div id = "Timeline">
 			<h1>The Saiga Saga</h1>
 				<br></br>
-				<p><span>Saiga antelope have a long history stretching back as far as the last Ice Age.
-					Although they are not very well known, they have led a tumultuous existence over the past century.
-					Saiga and rhinos are both poached for their horns, as they can sold for high prices to be used in Eastern medicine. </span></p>
+				<p><span>The Saiga antelope have a long history that stretches as far back as the last Ice Age.
+					Although they are not a highly recognized species, they have led a tumultuous existence over the past century.
+					The Saiga have largely been targeted for medicinal purposes, but recently have experienced even 
+					more drastic population declines due to other human-drive activities and environmental changes. </span></p>
 				<SaigaTimelineImage></SaigaTimelineImage>
-			</div>
+				</div>
 		</Container>
 	</Section>
 );

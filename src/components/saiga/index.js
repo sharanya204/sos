@@ -97,8 +97,11 @@ const SaigaAnimationCode = () => {
 
     button.on('click', function () {
         d3.selectAll('#Saiga1, #Saiga2, #Saiga3, #Wolf1, #Wolf2, #Fox1, #Fox2, #Plant1, #Plant2, #Plant3, #Plant4').style('fill-opacity', 1);
-    })
+    });
+
+    return svg1.node();
 
 };
+
 
 export default SaigaAnimationCode;
