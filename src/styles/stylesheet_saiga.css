@@ -29,14 +29,38 @@
     width:100%;
 }
 
+#saigabackground {
+    background: #a29c7f
+}
+
+/* Intro */
+#Intro {
+        background: #F2E5D2;
+        padding-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+        color: #C5894D;
+        text-align: center;
+}
+
+#intrographics {
+        margin: 20px;
+        background: #F2E5D2;
+        padding-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+}
 /* Timeline */
 #Timeline {
     background: #C5894D;
     padding-top: 60px;
     padding-left: 60px;
     padding-right: 60px;
+    color: #F2E5D2;
+    text-align: center;
 }
-
 /* Animation */
 #WhyImportant {
     background: #F2E5D2;
@@ -44,6 +68,8 @@
     padding-left: 60px;
     padding-right: 60px;
     width: 100%;
+    color: #C5894D;
+    text-align: center;
 }
 
 .AnimationText {
@@ -57,19 +83,21 @@
 
 /* Secondary drivers */
 #secondarydriversheading {
-    background:#F2E5D2;
+    background: #C5894D;
     padding-top: 60px;
     padding-left: 60px;
     padding-right: 60px;
+    text-align: center;
+    color: #F2E5D2;
 }
 
 .sources {
     height:100%;
     text-align: center;
-    background:#F2E5D2;
+    background: #C5894D;
     padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .spacer {
@@ -103,3 +131,13 @@
 #fighttext { display: none; }
 #fight:hover ~ #fighttext { display:block; }
 
+/* Future */
+#Future {
+    background: #F2E5D2;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    color: #C5894D;
+    text-align: center;
+}

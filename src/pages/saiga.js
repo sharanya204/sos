@@ -7,17 +7,23 @@ import { QuickFactsSaiga } from '@sections/QuickFacts.js'
 import { SaigaAnimation } from '@components/saiga/saigaanimation' 
 import { SaigaTimeline } from '@components/saiga/SaigaTimeline'
 import { SaigaSecondaryDrivers } from '@components/saiga/SaigaSecondaryDrivers'
+import { SaigaIntro } from '@components/saiga/SaigaIntro'
+import { SaigaFuture } from '@components/saiga/SaigaFuture'
 
 const Saiga = () => (
   <Layout>
     <Section id="saigasection">
       {/* <h2 className="sectionheader">Elephant</h2> */}
-      <Title animalname = {"Saiga"}></Title>
+      <Title animalname = {"Saiga Antelope"}></Title>
       <QuickFactsSaiga />
       </Section>
+      <Section id = "saigabackground">
+      <SaigaIntro />
       <SaigaTimeline />
       <SaigaAnimation />
       <SaigaSecondaryDrivers/>
+      <SaigaFuture />
+      </Section>
   </Layout>
 );
 
