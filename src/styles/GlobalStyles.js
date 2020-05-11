@@ -55,6 +55,18 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+
   button {
     border: none;
     background: none;
@@ -66,6 +78,21 @@ const GlobalStyles = createGlobalStyle`
   a {
     cursor: pointer;
   }
+
+  .custContainer {
+  display: flex;
+  flex-direction: column;
+  height:630px;
+  width:auto;
+  align-items: left;
+  justify-content: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .custContainer:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    }
 
 `;
 

@@ -1,7 +1,7 @@
 const theme = {
   font: {
-    primary: `'Roboto Slab', serif`,
-    secondary: `'Lato', sans`,
+    primary: `'Roboto Condensed', sans`,
+    secondary: `'Karla', sans`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',

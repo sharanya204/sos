@@ -34,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Save Our Species`,
+        short_name: `SOS`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,
@@ -46,7 +46,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`lato`, `roboto slab\:400,800`],
+        fonts: [
+        `karla`, 
+        `roboto condensed\:400,800`
+      ],
       },
     },
     {

@@ -37,6 +37,9 @@ const Header = () => (
                 Save Our Species
               </h2>
               <br />
+              <p>
+              From the first cave paintings of human-animal partnerships to modern day animal memes, human and animal lives have always been intertwined. While there are countless examples of mutualism between humans and animals, in recent years, this symbiosis has given way to parasitism in favor of the humans, and the ecological balance the planet has maintained for so many millennia is starting to tip.
+              </p>
               {/* <br />
               <p>
               From the first cave paintings of human-animal partnerships to modern day animal memes, human and animal lives have always been intertwined. While there are countless examples of mutualism between humans and animals, the balance is starting to tip. The International Union for Conservation of Nature (IUCN) conducts research and publishes the IUCN Red List of Threatened Species, which assesses the conservation status of species worldwide. 
