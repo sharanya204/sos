@@ -4,26 +4,30 @@ import Layout from '@common/Layout';
 import Title from '@sections/Title';
 import { Section, Container } from '@components/global';
 import { QuickFactsSaiga } from '@sections/QuickFacts.js'
-import { SaigaAnimation } from '@components/saiga/saigaanimation' 
+import { SaigaAnimation } from '@components/saiga/saigaanimation'
 import { SaigaTimeline } from '@components/saiga/SaigaTimeline'
 import { SaigaSecondaryDrivers } from '@components/saiga/SaigaSecondaryDrivers'
 import { SaigaIntro } from '@components/saiga/SaigaIntro'
 import { SaigaFuture } from '@components/saiga/SaigaFuture'
+import BackHome from '@sections/BackHome';
+
 
 const Saiga = () => (
   <Layout>
+    <BackHome />
+
     <Section id="saigasection">
       {/* <h2 className="sectionheader">Elephant</h2> */}
-      <Title animalname = {"Saiga Antelope"}></Title>
+      <Title animalname={"Saiga Antelope"}></Title>
       <QuickFactsSaiga />
-      </Section>
-      <Section id = "saigabackground">
+    </Section>
+    <Section id="saigabackground">
       <SaigaIntro />
       <SaigaTimeline />
       <SaigaAnimation />
-      <SaigaSecondaryDrivers/>
+      <SaigaSecondaryDrivers />
       <SaigaFuture />
-      </Section>
+    </Section>
   </Layout>
 );
 
