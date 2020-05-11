@@ -90,21 +90,21 @@
     text-align: center;
     color: #F2E5D2;
 }
-/* 
-.sources {
+
+.secondarydriversicons {
     height:100%;
     text-align: center;
     background: #C5894D;
     padding-top: 60px;
     padding-left: 30px;
     padding-right: 30px;
-} */
+}
 
 .spacer {
     padding:5%;
 }
 
-/* .sourceicons {
+.drivericons {
     display: inline-block;
     margin:20px;
     width:15%;
@@ -112,9 +112,9 @@
     transition: 500ms;
 }
 
-.sourceicons:hover {
+.drivericons:hover {
     scale:100%;
-} */
+}
 
 #furtext { display: none; }
 #fur:hover ~ #furtext { display: block; }
