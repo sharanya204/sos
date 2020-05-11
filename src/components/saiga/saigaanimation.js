@@ -3,7 +3,7 @@ import { Section, Container } from '@components/global';
 import '@styles/stylesheet_saiga.css';
 
 import { ReactComponent as SaigaAnimationIcon } from '@images/Saiga/antelopelayers.svg';
-import SaigaAnimationCode from '@components/saiga/index.js';
+// import SaigaAnimationCode from '@components/saiga/index.js';
 
 export const SaigaAnimation = () => (
 	<Section>
@@ -19,7 +19,7 @@ export const SaigaAnimation = () => (
 			<div className="figure">
 				<script src="https://d3js.org/d3.v5.min.js"></script>
 				<SaigaAnimationIcon></SaigaAnimationIcon>
-				<SaigaAnimationCode></SaigaAnimationCode>
+				{/* <SaigaAnimationCode></SaigaAnimationCode> */}
 			</div>
 		</Container>
 	</Section>
