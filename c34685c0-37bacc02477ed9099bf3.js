@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{MtI8:function(t,n,s){"use strict";s("q1tI");n.a=s.p+"static/1_frognarrative.26df10db.svg"}}]);
+//# sourceMappingURL=c34685c0-37bacc02477ed9099bf3.js.map
