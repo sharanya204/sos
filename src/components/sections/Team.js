@@ -13,17 +13,17 @@ const TEAM = [
   {
     name: 'Mia Hart',
     image: Mia,
-    role: 'Founder',
+    role: 'Director of Barketing',
   },
   {
     name: 'Phoebe Lu',
     image: Phoebe,
-    role: 'Art Director',
+    role: 'Branch Manager',
   },
   {
     name: 'Sharanya Soundararajan',
     image: Sharanya,
-    role: 'Frontend Engineer',
+    role: 'Assistant Branch Manager',
   }
 ];
 
