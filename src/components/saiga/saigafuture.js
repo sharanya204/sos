@@ -60,6 +60,10 @@ export const SaigaFuture = () => (
 				<p><span>Saiga population patterns have adapted and population numbers are slowly recovering.
 					For instance, females sexually mature faster and start reproducing at 1 year of age.
 					Saiga also now have mass birthing events over a week rather than spread out through a season to maximize offspring survival.
+					<br></br>
+					<br></br>
+					Experts now estimate that Saiga antelope have a population of around 120,000 individuals, which is an improvement from 40,000.
+					However, without further interventions to protect the species, population numbers will remain low.
 					</span></p>
 				<br></br>
 				<h3>Recent legislation</h3>
