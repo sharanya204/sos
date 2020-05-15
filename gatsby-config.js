@@ -47,7 +47,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-        `karla`, 
+        `karla\:400,700`, 
         `roboto condensed\:400,800`
       ],
       },

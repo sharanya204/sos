@@ -1,33 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-
+import Image from 'react-bootstrap/Image'
+import bannerimg from '@images/art/build.png'
 import { Container } from '@components/global';
 // import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        art_build: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
+
       <HeaderWrapper>
         <Container>
           <Grid>
             <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
+              <div className="banner">
+              <Image src={bannerimg} className="img-fluid" />
+              </div>              
             </Art>
             <Text>
               <h1>
@@ -40,16 +26,11 @@ const Header = () => (
               <p>
               From the first cave paintings of human-animal partnerships to modern day animal memes, human and animal lives have always been intertwined. While there are countless examples of mutualism between humans and animals, in recent years, this symbiosis has given way to parasitism in favor of the humans, and the ecological balance the planet has maintained for so many millennia is starting to tip.
               </p>
-              {/* <br />
-              <p>
-              From the first cave paintings of human-animal partnerships to modern day animal memes, human and animal lives have always been intertwined. While there are countless examples of mutualism between humans and animals, the balance is starting to tip. The International Union for Conservation of Nature (IUCN) conducts research and publishes the IUCN Red List of Threatened Species, which assesses the conservation status of species worldwide. 
-              </p> */}
             </Text>
           </Grid>
         </Container>
       </HeaderWrapper>
-    )}
-  />
+
 );
 
 const HeaderWrapper = styled.header`

@@ -1,13 +1,12 @@
 import React from 'react';
-import elephantqf from '@images/quickfacts/quickfactselephant.png';
-import frogqf from '@images/quickfacts/frogquickfacts.png.svg'
-import saigaqf from '@images/quickfacts/saigaquickfacts.png'
+import { ReactComponent as Elephantqf } from '@images/quickfacts/quickfactselephant-01.svg';
+import frogqf from '@images/quickfacts/frogquickfacts.svg'
+import saigaqf from '@images/quickfacts/saigaquickfacts.svg'
 import Image from 'react-bootstrap/Image'
 import { Section, Container } from '@components/global';
 
 import '@styles/stylesheet_elephant.css';
 
-import { useStaticQuery } from "gatsby"
 
 // const data = () => useStaticQuery(graphql`
 //     query {
@@ -25,8 +24,8 @@ import { useStaticQuery } from "gatsby"
 export const QuickFactsElephant = () => ( 
   <Section className="quickfacts">
     <Container>
-        <div className = "responsive-image">
-        <Image src={elephantqf} className="img-fluid" />
+        <div className = "img-fluid">
+        <Elephantqf />
         </div>
     </Container>
   </Section>

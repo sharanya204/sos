@@ -50,7 +50,6 @@ export const IvorySources = () => (
 
                 <IconHippo className="sourceicons" id="hippo">
                 </IconHippo>
-
                 <div className="spacer"> </div>
 
                 <p id="walrustext">Walrus ivory carving is traditional in Arctic cultures of North America, Russia and Greenland. Trade began with Vikings who were looking for a replacement for elephant ivory in the Early Medieval period.</p>
@@ -64,7 +63,7 @@ export const IvorySources = () => (
                 <p id="hippotext">Hippopotamus ivory is harder than elephant ivory and is more difficult to carve. It was, however, commonly used in the eighteenth century to make dentures and also to replace individual teeth.</p>
             </div>
             </div>
-            <div className="spacer"></div>
+            {/* <div className="spacer"></div> */}
             
       </Container>
     </Section>

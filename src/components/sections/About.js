@@ -13,7 +13,8 @@ const About = () => (
               <h2>About SOS</h2>
               <Spacer></Spacer>
               <p>
-               Save Our Species is an information visualization project that aims to explore specific human activities and drivers that have contributed to the gross imbalance between the human and animal world that we see today.
+               Save Our Species is an information visualization project that explores how human activities contributed to the gross imbalance between the human and animal world. We tell the stories of endangered species to illustrate specific human drivers of endangerment and their downstream impacts on the ecosystems we live in.
+
               </p>
             </div>
 

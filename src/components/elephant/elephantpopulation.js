@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Section, Container } from '@components/global';
 import '@styles/stylesheet_elephant.css';
-import { ReactComponent as IvoryPriceChart} from '@images/elephant/Ivoryprices-01.svg';
+import { ReactComponent as ElephantPopulationChart} from '@images/elephant/elephantpop-04.svg';
 
 
-export const IvoryPricing = () => ( 
-    <Section className="pricesection">
+export const ElephantPopulation = () => ( 
+    <Section>
       <Container>
         <div className="whativory">
-          <h3>Ivory prices</h3>
+          <h3>Elephant population</h3>
         </div>
         <div className="sourcetext">
           <p>
@@ -17,11 +17,11 @@ export const IvoryPricing = () => (
         </div>
 
         <div className="img-fluid">
-        <IvoryPriceChart />
+        <ElephantPopulationChart />
         </div>        
             
       </Container>
     </Section>
   );
 
-  export default IvoryPricing
+  export default ElephantPopulation

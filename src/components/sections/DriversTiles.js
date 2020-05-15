@@ -1,50 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import Image from 'react-bootstrap/Image'
+import artimage from '@images/art/articon.jpg'
+import policyimage from '@images/art/policyicon.jpg'
+import medicineimage from '@images/art/medicineicon.jpg'
+
 import { Link } from 'gatsby';
 
 import { Section, Container } from '@components/global';
 
 const DriversTiles = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        art_ivory: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "articon" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_medicine: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "medicineicon" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_policy: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "policyicon" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
       <Section id="drivers">
         <Container>
 
@@ -59,13 +24,13 @@ const DriversTiles = () => (
                   </div>
                   <div>
                     <p>
-                      Many advancements in human health are thanks to animals, from laboratory research to extraction of animal parts for their medicinal value.
+                      Many advancements in human health are thanks to animals, from laboratory research to extraction of animal parts for their medicinal value. Click here to learn more about how using their horns for medicine endangers the Saiga antelope.
                   </p>
                   </div>
                   <Spacer></Spacer>
 
                   <Art>
-                    <Img fluid={data.art_medicine.childImageSharp.fluid} />
+                  <Image src={medicineimage} className="img-fluid" />                  
                   </Art>
                 </custContainer>
               </Link>
@@ -82,13 +47,13 @@ const DriversTiles = () => (
                   </div>
                   <div>
                     <p>
-                      Policy can help or hurt species populations, whether it’s protecting an animal from extinction or enabling the decline of an animal by destroying its habitat.
+                      Policy can help or hurt species populations, whether it’s protecting an animal from extinction or enabling the decline of an animal by destroying its habitat. Click here to learn more about how policy endangers the Sierra yellow-legged frog.
               </p>
               <Spacer></Spacer>
 
                   </div>
                   <Art>
-                    <Img fluid={data.art_policy.childImageSharp.fluid} />
+                  <Image src={policyimage} className="img-fluid" />                  
                   </Art>
 
                 </custContainer>
@@ -103,12 +68,12 @@ const DriversTiles = () => (
                   </div>
                   <div>
                     <p>
-                      Animals are often exploited in the name of culture, including commercialization of animal parts and domesticated house pets.
+                      Animals are often exploited in the name of culture, including commercialization of animal parts and domestication. Click here to learn more about how using ivory for art and culture endangers the African elephant.
               </p>
               <Spacer></Spacer>
                   </div>
                   <Art>
-                    <Img fluid={data.art_ivory.childImageSharp.fluid} />
+                  <Image src={artimage} className="img-fluid" />                  
                   </Art>
                 </custContainer>
               </Link>
@@ -116,8 +81,6 @@ const DriversTiles = () => (
           </Grid>
         </Container>
       </Section>
-    )}
-  />
 );
 
 
@@ -166,7 +129,7 @@ const Spacer = styled.div`
 
 const GridTile = styled.div`
 padding:20px;
-height:650px;
+height:680px;
   background-color:white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
   transition: box-shadow 0.3s ease-in-out;

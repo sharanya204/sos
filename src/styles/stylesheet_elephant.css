@@ -44,9 +44,13 @@
     width:100%;
 }
 
+.img-team {
+    width:100%;
+}
+
 .animaltitlestyle {
-    color: #F2E5D2;
-    font-size: 120px;
+    color: rgb(145, 76, 76);
+    font-size: 70px;
 }
 
 .texthl {
@@ -58,6 +62,25 @@
       top: 0;
       left: 0;
 } */
+
+.timeline {
+    position: relative;
+    width:150%;
+    left: -25%;
+}
+/* 
+.timelineparent {
+    display: block;
+    text-align: center;
+} */
+
+#counter {
+    display: block;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    color:#8B0E3A;
+}
 
 #whativorybody {
     display: inline-flex;
@@ -98,16 +121,19 @@
 }
 
 .sources {
-    height:25vh;
     text-align: center;
 }
 
 .destinations {
-    height:70vh;
+    height:80%;
     text-align: center;
     display: inline-flex;
     flex-basis: content;
     align-items: center;
+}
+
+.destinations > * {
+    padding-right:2%;
 }
 
 .destinationmaster {
@@ -118,20 +144,61 @@
     padding:2%;
 }
 
-#walrustext { display: none; }
-#walrus:hover ~ #walrustext { display: block; }
 
-#orcatext { display: none;}
-#orca:hover ~ #orcatext { display:block; }
+#walrustext { line-height:0em; opacity:0; -webkit-transition:all 0.5s ease-in-out;  
+    -moz-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+#walrus:hover ~ #walrustext { line-height:1.2em; opacity:1; }
 
-#narwhaltext { display: none;}
-#narwhal:hover ~ #narwhaltext { display:block; }
+#orcatext { line-height:0em; opacity:0; -webkit-transition:all 0.5s ease-in-out;  
+    -moz-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+#orca:hover ~ #orcatext { line-height:1.2em; opacity:1; }
 
-#warthogtext { display: none;}
-#warthog:hover ~ #warthogtext { display:block; }
+#narwhaltext { line-height:0em; opacity:0; -webkit-transition:all 0.5s ease-in-out;  
+    -moz-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+#narwhal:hover ~ #narwhaltext { line-height:1.2em; opacity:1; }
 
-#hippotext { display: none; }
-#hippo:hover ~ #hippotext { display:block; }
+#warthogtext { line-height:0em; opacity:0; -webkit-transition:all 0.5s ease-in-out;  
+    -moz-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+#warthog:hover ~ #warthogtext { line-height:1.2em; opacity:1; }
+
+#hippotext { line-height:0em; opacity:0; -webkit-transition:all 0.5s ease-in-out;  
+    -moz-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;}
+#hippo:hover ~ #hippotext { line-height:1.2em; opacity:1;  }
+
+#Ivoryprices-01_svg__Layer_1 > path:nth-child(9) {
+    stroke-width: 4;
+}
+
+#DestinationsMaster_svg__Heli {
+    animation: Ivoryprices-01_svg__Money 20s linear infinite;
+    transform-origin:50% 48%;
+}
+
+#DestinationsMaster_svg__Rifle {
+    animation: Ivoryprices-01_svg__Money 20s linear infinite;
+    transform-origin:50% 48%;
+}
+
+#DestinationsMaster_svg__Pumpkin {
+    animation: Ivoryprices-01_svg__Money 20s linear infinite;
+    transform-origin:50% 48%;
+}
+
+/* #Ivoryprices-01_svg__Money {
+    position: absolute;
+    
+  animation: Ivoryprices-01_svg__Money 7s linear infinite
+} */
+
+@keyframes Ivoryprices-01_svg__Money {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 
 
 /* #DestinationsMaster_svg__Camb > path:nth-child(3){
     fill: #000000;;
@@ -145,7 +212,7 @@
     background-color: #F2E5D2;
     color: #000000;
     text-align: left;
-    padding: 50px;
+    padding: 30px;
     border-radius: 6px;
     position: relative;
     right:0%;

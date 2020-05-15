@@ -18,13 +18,14 @@ const IvoryIntro = () => (
       </div>
 
       <div id="whativorybody">
-        <div id="introskull">
-          <Skull />
-        </div>
+        
         <div id="introsub">
           <p>
             Dubbed <strong>white gold</strong> ivory is the material that makes up mammal tusks and teeth. Its softness makes it easy to carve into intricate decorative items.
           </p>
+        </div>
+        <div id="introskull">
+          <Skull />
         </div>
         <div id="introsub">
           <p>

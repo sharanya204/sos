@@ -1,80 +1,48 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import Image from 'react-bootstrap/Image';
+import Mia from '@images/team/josh.jpg'
+import Phoebe from '@images/team/lisa.jpg'
+import Sharanya from '@images/team/ashlyn.jpg'
+
 
 import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
     name: 'Mia Hart',
-    image: 'josh.jpg',
+    image: Mia,
     role: 'Founder',
   },
   {
     name: 'Phoebe Lu',
-    image: 'lisa.jpg',
+    image: Phoebe,
     role: 'Art Director',
   },
   {
     name: 'Sharanya Soundararajan',
-    image: 'ashlyn.jpg',
+    image: Sharanya,
     role: 'Frontend Engineer',
   }
 ];
 
 const Team = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allFile(filter: { sourceInstanceName: { eq: "team" } }) {
-          edges {
-            node {
-              relativePath
-              childImageSharp {
-                fluid(maxWidth: 400, maxHeight: 400) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-        art_team: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "team_work" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1600) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
       <Section id="team" accent="secondary">
-        <Container style={{ position: 'relative' }}>
+        <Container style={{ position: 'relative'}}>
           <h1>The Team</h1>
           <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
-              const img = data.allFile.edges.find(
-                ({ node }) => node.relativePath === image
-              ).node;
-
-              return (
-                <div key={name}>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
+          {TEAM.map((e, idx) => (
+                <div key={idx}>
+                  <Image className="img-team" src={e.image} alt={e.name} />
+                  <Title>{e.name}</Title>
+                  <Subtitle>{e.role}</Subtitle>
                 </div>
-              );
-            })}
+          ))}
           </TeamGrid>
           
         </Container>
       </Section>
-    )}
-  />
 );
 
 const TeamGrid = styled.div`

@@ -13,7 +13,7 @@ const Drivers = () => (
               <h2>Drivers</h2>
               <Spacer></Spacer>
               <p>
-              A driver is defined as any natural or human-induced factor that directly or indirectly causes a change in an ecosystem. SOS paints a picture of endangerment and extinction of biodiversity via the lens of human drivers, exploring the changes that human exploitation of our planet has brought about. The current avatar features three drivers, medicine, policy, and art, detailed below, with one animal as the focus for each driver:
+              A driver is defined as any natural or human-induced factor that directly or indirectly causes a change in an ecosystem. We focus on three anthropogenic drivers of extinction and loss of biodiversity: medicine, policy, and art. For each driver, we explore the ecological changes of human exploitation through the lens of an endangered species.
               </p>
             </div>
 
