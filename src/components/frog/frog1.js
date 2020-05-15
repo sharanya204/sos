@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Section, Container } from '@components/global';
+import frogGif from '@images/frog/FrogHabitat.gif';
 
 
 import Frog1 from '@images/frog/1_frognarrative.svg';
@@ -21,6 +22,9 @@ export const frog1 = () => (
                 <img className="frogImages" src={Frog1} />
                 <img className="frogImages" src={Frog2} />
                 <img className="frogImages" src={Frog3} />
+                <div className="gifstyle">
+				<img src={frogGif} alt="Frogs disappearing" />
+			</div>
             </div>
 
         </Container>

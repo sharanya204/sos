@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Section, Container } from '@components/global';
 import '@styles/stylesheet_saiga.css';
 
-import { ReactComponent as SaigaAnimationIcon } from '@images/Saiga/antelopelayers.svg';
 import saigaGif from '@images/Saiga/saigagif.gif';
 
 // import SaigaAnimationCode from '@components/saiga/index.js';
