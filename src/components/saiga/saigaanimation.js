@@ -3,6 +3,8 @@ import { Section, Container } from '@components/global';
 import '@styles/stylesheet_saiga.css';
 
 import { ReactComponent as SaigaAnimationIcon } from '@images/Saiga/antelopelayers.svg';
+import saigaGif from '@images/Saiga/saigagif.gif';
+
 // import SaigaAnimationCode from '@components/saiga/index.js';
 
 export const SaigaAnimation = () => (
@@ -18,7 +20,7 @@ export const SaigaAnimation = () => (
 				and plants.</span></p></div>
 			<div className="figure">
 				<script src="https://d3js.org/d3.v5.min.js"></script>
-				<SaigaAnimationIcon></SaigaAnimationIcon>
+				<img src={saigaGif} alt="Saigas disappearing" />
 				{/* <SaigaAnimationCode></SaigaAnimationCode> */}
 			</div>
 		</Container>
