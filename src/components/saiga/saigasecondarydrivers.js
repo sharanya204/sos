@@ -29,33 +29,35 @@ export const SaigaSecondaryDrivers = () => (
                 <p><span> Other than poaching, the Saiga are also threatened by several other factors.</span></p>
             </div>
 
-            <div className="sources">
-                <Driver1 className="sourceicons" id="fur">
+            <div className="secondarydriversicons">
+                <Driver1 className="drivericons" id="fur">
                 </Driver1>
 
-                <Driver2 className="sourceicons" id="migration">
+                <Driver2 className="drivericons" id="migration">
                 </Driver2>
 
-                <Driver3 className="sourceicons" id="gender">
+                <Driver3 className="drivericons" id="gender">
                 </Driver3>
 
-                <Driver4 className="sourceicons" id="susceptible">
+                <Driver4 className="drivericons" id="susceptible">
                 </Driver4>
 
-                <Driver5 className="sourceicons" id="fight">
+                <Driver5 className="drivericons" id="fight">
                 </Driver5>
 
-                <div className="spacer"> </div>
+                <div className="space"> </div>
 
-                <p id="furtext">One of the largest secondary drivers of Saiga antelope endangerment is hunting for Saiga meat and skins.  </p>
+                <p id="furtext">Overhunting for Saiga meat and skins is the second leading cause of population decline. </p>
 
-                <p id="migrationtext">Saiga migration routes are increasingly encroached on by humans.</p>
+                <p id="migrationtext">Saiga migration routes are increasingly encroached on by humans building irrigation, canals, and highways.
+                Many young Saiga die trying to pass these barriers.</p>
 
-                <p id="gendertext">Due to males being poached for their horns, there is a gender dichotomy.</p>
+                <p id="gendertext">Due to males being selectively poached for their horns, there is a gender dichotomy that prolongs the species' ability to bounce back.</p>
 
-                <p id="susceptibletext">Saiga antelope are naturally susceptible to many diseases. </p>
+                <p id="susceptibletext">Saiga antelope are naturally susceptible to many diseases, which can cause drastic population declines in short periods of time. </p>
 
-                <p id="fighttext">Males fight to death during mating season, with 50-70% of males dying in the process.</p>
+                <p id="fighttext">Due to climate change, the steppes are becoming more arid.
+                This causes vegetation to degrade, which Saiga antelope rely on for food.</p>
             </div>
             
       </Container>
