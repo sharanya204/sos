@@ -20,11 +20,11 @@ export const frog1 = () => (
             </div> */}
             <div className="imgparent">
                 <img className="frogImages" src={Frog1} />
-                <img className="frogImages" src={Frog2} />
-                <img className="frogImages" src={Frog3} />
                 <div className="gifstyle">
-				<img src={frogGif} alt="Frogs disappearing" />
-			</div>
+                    <img src={frogGif} alt="Frogs disappearing" />
+                </div>
+                <img className="frogImages" src={Frog3} />
+
             </div>
 
         </Container>

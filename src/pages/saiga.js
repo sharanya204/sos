@@ -18,7 +18,7 @@ const Saiga = () => (
 
     <Section id="saigasection">
       {/* <h2 className="sectionheader">Elephant</h2> */}
-      <Title animalname={"Saiga Antelope"}></Title>
+      <Title animalname={"Driver: Medicine   //   Saiga Antelope"}></Title>
       <QuickFactsSaiga />
     </Section>
     <Section id="saigabackground">
